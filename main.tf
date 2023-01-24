@@ -25,7 +25,7 @@ provider "azurerm" {
 
 
 resource "azurerm_virtual_network" "secure_terraform_network" {
-  name                = "secureVnet"
+  name                = "secureVnetDev"
   address_space       = ["10.1.0.0/16"]
   location            = var.rg_location
   resource_group_name = var.rg_name
